@@ -1,0 +1,49 @@
+﻿@using App.ViewModels
+
+@model SignInViewModel 
+@{
+    ViewData["Title"] = "Sign in ";
+}
+
+<section class="signin">
+    <div class="container">
+        <form method="post" asp-controller="Auth" asp-action="SignIn" asp-route-ReturnUrl="@ViewData["ReturnUrl"]" novalidate>
+            <h1>Sign in to your account </h1>
+            <p>Dont have a account? <a asp-controller="Auth" asp-action="SignUp"> Sign up here</a>.</p>
+
+
+            <div class="form-content">
+
+
+                <div id="form-email" class=" input-group">
+                    <label asp-for="Email"></label>
+                    <input asp-for="Email" />
+                </div>
+
+                <div id="form-password" class=" input-group">
+                    <label asp-for="Password"></label>
+                    <span asp-validation-for="Password"></span>
+                    <input asp-for="Password" />
+                </div>
+
+
+                <div id="form-checkbox" class=" checkbox-group">
+                  
+                   <div class="input-group">
+                     <input asp-for="Ispresistent" />
+                     <label asp-for="Ispresistent"></label>
+                    </div>
+
+                     
+                </div>
+                <div id="form-button">
+                    <button type="submit" class="btn btn-theme"><i class="fa-regular fa-arrow-right-to-bracket"></i>Sign in</button>
+                </div>
+            </div>
+
+        </form>
+    </div>
+</section>
+
+
+                 

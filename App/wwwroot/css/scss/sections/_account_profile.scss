@@ -1,0 +1,40 @@
+.account-details {
+    display: grid;
+    grid-template-columns: 2fr 5fr;
+    gap: 150px;
+    margin-bottom: 70px;
+
+    aside {
+        border-right: 1px solid #808080;
+        padding-right: 20px;
+
+        .profile-info {
+            margin: 20px;
+            text-align: center;
+
+            h3 {
+                margin-top: 15px;
+                margin-bottom: 0;
+            }
+
+            p {
+            }
+        }
+
+        nav {
+            margin-top: 50px;
+            text-align: left;
+
+            a {
+                margin: 10px 0;
+                text-align: left;
+                justify-content: flex-start;
+            }
+
+            .btn-them-s {
+                text-align: left;
+                justify-content: center;
+            }
+        }
+    }
+}

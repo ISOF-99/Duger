@@ -1,0 +1,90 @@
+
+
+.account-details {
+
+    .container {
+        display: grid;
+        grid-template-columns: auto 1fr;
+        grid-template-areas: "aside content";
+
+        aside {
+            grid-area: aside;
+            margin-right: 32px;
+            border-right: 1px solid #808080;
+            padding: 32px;
+
+            .account-profile {
+
+                .profile {
+                    .profile-image {
+                        position: relative;
+
+                        img {
+                            max-width: 120px;
+                            max-height: 120px;
+                            border-radius: 50%;
+                        }
+
+                        form {
+                            position: absolute;
+                            bottom: 0;
+                            right: -80px;
+
+                            input {
+                            }
+
+                            label {
+                            }
+                        }
+                    }
+
+                    .profile-info {
+
+                        h3 {
+                        }
+
+                        p {
+                        }
+                    }
+                }
+            }
+        }
+
+        .content {
+            grid-area: content;
+
+            form {
+
+                h5 {
+                }
+
+                .form-content {
+                    .input-wrapper {
+                        display: flex;
+                        justify-content: space-between;
+                        width: 100% !important;
+                        gap: 16px;
+
+                        .input-group {
+                            width: 100% !important;
+
+                            label {
+                            }
+
+                            input {
+                            }
+
+                            span {
+                            }
+                        }
+                    }
+
+                    .form-button {
+                        display: flex;
+                        margin-top: 16px;
+                    }
+                }
+            }
+        }
+    }
+}
