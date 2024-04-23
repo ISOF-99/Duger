@@ -91,6 +91,6 @@ public class AuthController(UserManager<UserEntity> userManager, SignInManager<U
     public new async Task<IActionResult> SignOut()
     {
         await _signInManager.SignOutAsync();
-        return RedirectToAction("Index", "Home");
+        return RedirectToAction("Auth", "Details");
     }
 }
